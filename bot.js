@@ -12,7 +12,7 @@ const select1 = "نه ردیفه";
 const select2 = "نذاری بهتره";
 const errorText = "لطفاً عکس آپلود کنید!☝🏻";
 
-module.exports = (client, app) => {
+module.exports = client => {
   let chats = client.db("academeme").collection("states");
 
   bot.on("photo", async msg => {
